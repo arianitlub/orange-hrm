@@ -57,4 +57,9 @@ public class LoginPage extends BasePage {
         WaitUtils.waitUntilElmIsVisible(forgotPasswordLink);
         forgotPasswordLink.click();
     }
+
+    public boolean loginButonIsDisplay(){
+        WaitUtils.waitUntilElmIsVisible(loginButton);
+        return loginButton.isDisplayed();
+    }
 }
