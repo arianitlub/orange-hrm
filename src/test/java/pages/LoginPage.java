@@ -28,6 +28,10 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//*[@class='oxd-alert-content oxd-alert-content--error']")
     private WebElement errorMessage;
 
+    @FindBy(xpath = "//p[contains(@class, 'orangehrm-login-forgot-header')]")
+    public WebElement forgotPasswordLink;
+
+
     public void enterUsername(String username) {
 
         WaitUtils.waitUntilElmIsVisible(usernameField);
@@ -47,5 +51,10 @@ public class LoginPage extends BasePage {
     public boolean isErrorDisplayed() {
         WaitUtils.waitUntilElmIsVisible(errorMessage);
         return errorMessage.isDisplayed();
+    }
+
+    public void clickForgotPasswordLink() {
+        WaitUtils.waitUntilElmIsVisible(forgotPasswordLink);
+        forgotPasswordLink.click();
     }
 }
