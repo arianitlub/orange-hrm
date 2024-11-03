@@ -16,6 +16,9 @@ public class DashboardPage extends BasePage {
     @FindBy(xpath = "//a[text()='Logout']")
     private WebElement logoutButton;
 
+    @FindBy(xpath = "//a[contains(@class, 'oxd-main-menu') and contains(., 'PIM')]")
+    private WebElement pimModuleLink;
+
     public void clickProfileDropdown() {
         WaitUtils.waitUntilElmIsClickable(profileDropdown);
         profileDropdown.click();
@@ -26,8 +29,14 @@ public class DashboardPage extends BasePage {
         logoutButton.click();
     }
 
+    public void clickPIMModule() {
+        WaitUtils.waitUntilElmIsClickable(pimModuleLink);
+        pimModuleLink.click();
+    }
+
     public boolean isDashboardDisplayed() {
         WaitUtils.waitUntilElmIsVisible(dashboardHeader);
         return dashboardHeader.isDisplayed() && dashboardHeader.getText().equalsIgnoreCase("Dashboard");
     }
+
 }
