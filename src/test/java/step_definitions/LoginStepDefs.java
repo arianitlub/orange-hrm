@@ -12,7 +12,7 @@ import utilities.Driver;
 
 import static org.testng.Assert.assertTrue;
 
-public class OrangeHrmStepDefs {
+public class LoginStepDefs {
     private LoginPage loginPage = new LoginPage();
     private DashboardPage dashboardPage = new DashboardPage();
     private WebDriver driver = Driver.getDriver();

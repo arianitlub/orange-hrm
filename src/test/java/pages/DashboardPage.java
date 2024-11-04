@@ -22,6 +22,9 @@ public class DashboardPage extends BasePage {
     @FindBy(xpath = "//a[contains(@class, 'oxd-main-menu') and contains(., 'Leave')]")
     private WebElement leaveModuleLink;
 
+    @FindBy(xpath = "//a[contains(@class, 'oxd-main-menu') and contains(., 'Recruitment')]")
+    private WebElement recruitmentModuleLink;
+
     public void clickProfileDropdown() {
         WaitUtils.waitUntilElmIsClickable(profileDropdown);
         profileDropdown.click();
@@ -40,6 +43,11 @@ public class DashboardPage extends BasePage {
     public void clickLeaveModule() {
         WaitUtils.waitUntilElmIsClickable(leaveModuleLink);
         leaveModuleLink.click();
+    }
+
+    public void clickRecruitmentModule() {
+        WaitUtils.waitUntilElmIsClickable(recruitmentModuleLink);
+        recruitmentModuleLink.click();
     }
 
     public boolean isDashboardDisplayed() {
