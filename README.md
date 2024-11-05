@@ -8,7 +8,7 @@ This project contains automated tests for the Orange HRM system, developed as pa
 - **JUnit/TestNG**: Used as the test runner.
 - **Java**: The programming language for step definitions and additional test logic.
 
-## Test Scenarios
+## Test Scenarioss
 The following test cases have been automated:
 1. **Login** - Valid and Invalid login scenarios to ensure authentication works as expected.
 2. **Reset Password** - Testing the reset password functionality.
