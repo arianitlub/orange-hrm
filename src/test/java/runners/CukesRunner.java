@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "step_definitions",
-        dryRun = false, // veq i kshyr files a jane mapped mire
-        tags = "@etsy_parameterization", // lidhet me feature tag
+        dryRun = false,
+        tags = "@orangehrm_login",
         publish = false
 )
 public class CukesRunner {}
