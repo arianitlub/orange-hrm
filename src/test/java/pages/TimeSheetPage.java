@@ -73,13 +73,11 @@ public class TimeSheetPage extends BasePage {
         }
     }
 
-    // Method to click the "View" button for the employee's timesheet
     public void clickViewButton() {
         WaitUtils.waitUntilElmIsClickable(viewButton);
         viewButton.click();
     }
 
-    // Method to click the "Edit" button on the timesheet
     public void clickEditButton() {
         WaitUtils.waitUntilElmIsClickable(editButton);
         editButton.click();
@@ -111,7 +109,6 @@ public class TimeSheetPage extends BasePage {
         }
     }
 
-    // Method to fill the second entry field with specified text
     public void fillSecondEntry(String entryText) {
 
         WaitUtils.waitUntilElmIsClickable(secondEntryInput);
@@ -129,13 +126,11 @@ public class TimeSheetPage extends BasePage {
         firstOption.click();
     }
 
-    // Method to click the "Save" button
     public void clickSaveButton() {
         WaitUtils.waitUntilElmIsClickable(saveButton);
         saveButton.click();
     }
 
-    // Method to verify if the success popup is displayed
     public boolean isSuccessPopupDisplayed() {
         WaitUtils.waitUntilElmIsVisible(successPopup);
         return successPopup.isDisplayed();

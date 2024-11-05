@@ -13,7 +13,6 @@ import java.time.Duration;
 public abstract class BasePage {
 
     protected static WebDriver driver = Driver.getDriver();
-    protected static Faker faker = new Faker();
     protected static Actions actions = new Actions(driver);
     protected static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));;
     protected static Select select;
